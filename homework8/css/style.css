@@ -1,0 +1,33 @@
+/* დავ1 */
+
+.one{
+    height: 70px;
+}
+
+h2 {
+    font-size: 50px;
+    color: blueviolet;
+}
+
+
+button {
+    width: 100px;
+    height: 30px;
+}
+
+/* დავ2 */
+
+h3{
+    font-size: 50px;
+    color: rgb(24, 5, 42);
+}
+.two{
+    height: 70px;
+    margin-top: 30px;
+}
+
+#image-preview {
+    max-width: 300px;
+    max-height: 300px;
+    margin: 20px 0;
+}
