@@ -18,13 +18,10 @@ login.addEventListener("click", () => {
 function handleSignUpFunc() {
     //   const SignUpBtn = document.getElementById("signUpBtn");
     const userName = document.getElementById("userNameInput").value;
-    console.log(userName);
     const email = document.getElementById("emailInput").value;
-    console.log(email);
     const password = document.getElementById("passwordInput").value;
-    console.log(password);
     const confirmPass = document.getElementById("confirmPassInput").value;
-    console.log(confirmPass);
+    
 
     const userLoginLogger = JSON.parse(
 
@@ -39,15 +36,16 @@ function handleSignUpFunc() {
         confirmPass: confirmPass,
 
     };
-    console.log(userLoginLogger)
+    
     userLoginLogger.push(newUser);
 
     localStorage.setItem("userLoginLogger", JSON.stringify(userLoginLogger));
+    window.location.href = './index.html';
 }
 
 
-function authorizeUser() {
-    const savedUsers = JSON.parse(localStorage.getItem('users')) || [];
+function authorizeUser()  {
+    const savedUsers = JSON.parse(localStorage.getItem('userLoginLogger')) || [];
     const email = document.querySelector('.email').value;
     const password = document.querySelector('.password').value;
 
@@ -61,6 +59,8 @@ function authorizeUser() {
         alert('Invalid email or password. Please try again.');
     }
 }
+
+
 
 
 

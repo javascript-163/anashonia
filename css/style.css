@@ -1,5 +1,5 @@
 .container3 {
-    width: min(100%,1440px);
+    width: min(100%, 1440px);
     margin: auto;
     padding-top: 96px;
 }
@@ -20,16 +20,18 @@
     justify-content: center;
     column-gap: 300px;
 }
-.registertitle1{
+
+.registertitle1 {
     font-size: 70px;
     font-weight: 700;
 }
 
-.registertitle2{
+.registertitle2 {
     margin-top: 30px;
     font-size: 40px;
     font-weight: 400;
 }
+
 .title {
     font-weight: 400;
     letter-spacing: 1.5px;
@@ -275,6 +277,7 @@ header {
     font-style: normal;
     font-weight: 700;
     line-height: 48px;
+    text-align: center;
 
 }
 
@@ -686,7 +689,7 @@ header {
     border: 1px solid #FFF;
 
     position: relative;
-   
+
 }
 
 .about_section_one_form ::placeholder {
@@ -708,7 +711,7 @@ header {
     border: 2px solid #FFF;
     border: none;
     background: #F5F5F5;
-    
+
 
 }
 
@@ -1084,7 +1087,7 @@ header {
 /* register and loginpage */
 
 .container3 {
-    width: min(100%,1440px);
+    width: min(100%, 1440px);
     margin: auto;
     padding-top: 96px;
 }
@@ -1105,16 +1108,18 @@ header {
     justify-content: center;
     column-gap: 300px;
 }
-.registertitle1{
+
+.registertitle1 {
     font-size: 70px;
     font-weight: 700;
 }
 
-.registertitle2{
+.registertitle2 {
     margin-top: 30px;
     font-size: 40px;
     font-weight: 400;
 }
+
 .title {
     font-weight: 400;
     letter-spacing: 1.5px;
@@ -1224,4 +1229,269 @@ header {
     font-size: 22px;
     border: none;
     cursor: pointer;
+}
+
+
+
+/* slide */
+
+* {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+    /* max-width: 1000px; */
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+
+
+/* appp */
+
+
+
+.product_title {
+    font-size: 30px;
+    font-weight: 700;
+
+}
+
+
+
+.app_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.modal {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+
+.appsectionimage {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+.product_title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+.price_app_producte {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+.select1 {
+    margin-bottom: 10px;
+}
+
+
+.app_button_catalog {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.app_button_catalog:hover {
+    background-color: #0056b3;
+}
+
+
+.detals_app {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+#productDescription {
+    font-size: 16px;
+    line-height: 1.5;
+}
+/* contact  */
+
+.contactmepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(76, 46, 4);
+    font-size: 40px;
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contacttitle5 {
+    font-size: 40px;
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contactmepage form {
+    width: 600px;
+    text-align: center;
+}
+
+form .input-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-box .input-filed {
+    width: 45%;
+}
+
+
+.filed .item {
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid #0ef;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #fff;
+    margin: 12px 0;
+}
+
+.filed .item ::placeholder {
+    color: rgba(255, 255, 255, .3);
+}
+
+.filed .error-txt {
+    font-size: 14.5px;
+    color: red;
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none;
+}
+
+form .textarea-filed .item {
+    resize: none;
+}
+
+form .textarea-filed .error-txt {
+    margin-top: -10px;
+}
+
+.formbutton5 {
+    padding: 12px 32px;
+    background: #0ef;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #0ef;
+    font-size: 16px;
+    color: #333;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
 }
